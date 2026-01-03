@@ -62,7 +62,7 @@ function playMusic(track, paused = false) {
 
     currentIndex = songs.indexOf(track);
 
-    currentSong.src = `/songs/${currFolder}/${track}`;
+    currentSong.src = `songs/${currFolder}/${track}`;
 
     if (!paused) {
         currentSong.play().catch(() => {});
@@ -86,7 +86,7 @@ function displayAlbums() {
                 <polygon points="26,20 26,44 46,32" fill="#121212" />
             </svg>
 
-            <img src="/songs/${folder}/card.jpeg" alt="">
+            <img src="songs/${folder}/card.jpeg" alt="">
             <h2>${folder.replace(/[_-]/g," ")}</h2>
         </div>`;
     });
